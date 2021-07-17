@@ -1,0 +1,583 @@
+/*  Header de mon service*/
+
+body .head-mon-serv {
+    margin-top: 0px;
+    width: 100%;
+}
+
+body .head-mon-serv .nav-container-mon-serv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(14, 207, 255, 0.514);
+    width: 100%;
+}
+
+body .head-mon-serv .nav-container-mon-serv .lg {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.navbar .nav-el a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.1s ease 0s;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar1 {
+    width: 40%;
+}
+.navbar2 {
+    width: 10%;
+}
+.nav-el3 .elementP .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.nav-el2 .element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.1s ease 0s;
+    padding: 10px;
+    margin-left: -40px;
+    margin-right: -60px;
+}
+
+.navbar2 .nav-el2 .element .bell {
+    font-size: large;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+}
+
+.navbar2 .nav-el2 .element .number {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: xx-small;
+    margin-top: -20px;
+    margin-right: -25px;
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.2px;
+}
+
+body .head-mon-serv .nav-container-mon-serv .navbar2 .nav-el2 .element .number:empty {
+    display: none;
+}
+
+/*body .head-mon-serv .nav-container-mon-serv .navbar3 .nav-el3 .elementP {
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease 0s;
+    padding-top: 37%;
+    padding-bottom: 40%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -5px;
+    margin-right: -5px;
+    justify-content: center;
+    align-items: center;
+}
+
+body .head-mon-serv .nav-container-mon-serv .navbar3 .nav-el3 .elementP .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+body .head-mon-serv .nav-container-mon-serv .navbar1 .nav-el1 .nav-btn:hover {
+    color: white;
+}
+
+body .head-mon-serv .nav-container-mon-serv .navbar1 .nav-el1 .actif {
+    color: #000000;
+    background-color: #ffffff81;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 25px;
+    padding-top: 30px;
+    margin-left: -25px;
+    margin-right: -25px;
+    transition: all 0.1s ease 0s;
+}
+
+body .head-mon-serv .nav-container-mon-serv .navbar1 .nav-el1 .actif:hover {
+    color: gray;
+}
+
+body .head-mon-serv .nav-container-mon-serv .navbar2 .nav-el2 .element .bell:hover {
+    color: white;
+}
+
+body .head-mon-serv .nav-container-mon-serv .navbar2 .nav-el2 .element .bell:active {
+    background-color: rgba(128, 128, 128, 0.452);
+    border-radius: 100%;
+}
+
+body .head-mon-serv .nav-container-mon-serv .navbar3 .nav-el3 .elementP:active {
+    background-color: rgba(128, 128, 128, 0.452);
+    border-radius: 100%;
+} */
+
+
+/* Menu notification*/
+
+.notification-list {
+    position: absolute;
+    top: 170px;
+    left: 271px;
+    width: 60%;
+    padding-top: 35px;
+    background-color: white;
+    color: #023047;
+    border-style: solid;
+    border-width: 0.2px;
+    border-radius: 10px;
+    border-bottom: #fff;
+}
+
+.not-tab .fermer {
+    position: absolute;
+    padding: 3px;
+    width: 30px;
+    text-align: center;
+    top: 130px;
+    left: 960px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.not-tab .fermer:hover {
+    color: #fff;
+    background-color: #88838388;
+    border-radius: 50%;
+}
+
+.notification-list .section {
+    display: block;
+    padding: 10px 20px;
+}
+
+.notification-list .section .profContsec {
+    display: flex;
+    text-decoration: none;
+    padding: 8px 60px;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    background-color: #ddf1f7;
+}
+
+.notification-list .section .profContsec:hover {
+    color: #219ebc;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0.2px;
+}
+
+
+/*.notification-list .section .profContsec:visited {
+    background-color: #e5f0f3;
+}
+
+.notification-list .section .profContsec:visited:hover {
+    color: gray;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0.2px;
+}*/
+
+.notification-list .section .profContsec .profConttxt {
+    display: block;
+    padding: 0px 10px;
+}
+
+.notification-list .section .profContsec .profConttxt .txt {
+    font-size: small;
+    font-weight: bold;
+}
+
+.notification-list .section .profContsec .profConttxt .txt-sub {
+    font-size: x-small;
+}
+
+
+/* petite partie droite*/
+.noyeau-marche {
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+.partie-contain {
+    width: 30%;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #219ebc;
+}
+.partie-droite {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    background-color: #f7fcfd;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partie-droite h3 {
+    text-align: center;
+}
+
+.partie-droite .searchbar {
+    padding: 6px;
+    width: 50%;
+    height: auto;
+    
+}
+
+.partie-droite .searchbar input {
+    margin: 10px;
+    margin-right: 0px;
+    padding: 6px 10px;
+    color: #000000;
+    border-radius: 5px;
+    border: none;
+    border-style: none;
+    background-color: #dcf7ff;
+    outline: none;
+}
+
+.partie-droite .searchbar .search {
+    border: none;
+    background-color: #219ebc;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.partie-droite .searchbar .search:active {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.partie-droite .searchbar .search:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.partie-droite .searchbar .search:hover {
+    background-color: #c4eaf3;
+    border-style: none;
+    color: #219ebc;
+    border: none;
+    cursor: pointer;
+}
+
+.partie-droite .section-dos {
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: #000000;
+    border-width: 0.2px;
+    margin: 5px 20px;
+    padding: 5px 10px;
+}
+
+.partie-droite .section-dos .num-doss .doss {
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.partie-droite .section-dos .num-doss {
+    text-decoration: none;
+    color: #000000;
+}
+
+.partie-droite .section-dos .num-doss .doss:hover {
+    color: #219ebc;
+}
+
+.partie-droite .section-dos:active {
+    color: white;
+    background-color: #a5e7f8;
+}
+
+.partie-droite .more {
+    font-size: 12px;
+    padding: 5px 20px;
+    font-weight: bold;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #219ebc;
+    transition: 100ms ease-in;
+    border: none;
+    text-align: center;
+    margin-left: 90px;
+}
+
+.partie-droite .more:active {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.partie-droite .more:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.partie-droite .more:hover {
+    background-color: #c4eaf3;
+    border-style: none;
+    color: #219ebc;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* partie du milieu*/
+
+.partie-milieu {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.partie-milieu h2 {
+    text-align: center;
+}
+.content-marche {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-right: 50px;
+}
+.btn-contain {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.dossiers {
+    margin-top: 50px;
+    width: 80%;
+    border: 3px solid #219ebc;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+.partie-milieu button {
+    font-size: 14px;
+    width: 150px;
+    font-weight: bold;
+    padding: 0px 30px;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #219ebc;
+    transition: 100ms ease-in;
+    border: none;
+}
+
+.partie-milieu button:active {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.partie-milieu button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.partie-milieu button:hover {
+    background-color: #c4eaf3;
+    border-style: none;
+    color: #219ebc;
+    border: none;
+    cursor: pointer;
+}
+
+.partie-milieu h3 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/* petit menu à gauche */
+
+.profilemenu {
+    position: absolute;
+    top: 70px;
+    padding-bottom: 70px;
+    right: 20px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.profilemenu .profile {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profilemenu .profile .userinfo {
+    font-size: medium;
+    font-weight: bold;
+    line-height: 5px;
+}
+
+.profilemenu .profile .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.profilemenu .links .navelement {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ddf1f7;
+    padding: 3px 30px;
+}
+
+.profilemenu .links .actif {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #92e6ff;
+    padding: 3px 30px;
+}
+
+.profilemenu .links .actif:hover {
+    background-color: #ddf1f7;
+}
+
+.profilemenu .links .navelement:hover {
+    background-color: #92e6ff;
+}
+
+.profilemenu .links .navelement .compte {
+    color: #000000;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    justify-content: left;
+    line-height: 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.profilemenu .links .dossier {
+    color: #000000;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    justify-content: left;
+    border: none;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.profilemenu .links .historique {
+    color: #000000;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    justify-content: left;
+    border: none;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.profilemenu .links .service {
+    color: #000000;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    justify-content: left;
+    border: none;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.profilemenu .links .archive {
+    color: #000000;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    justify-content: left;
+    border: none;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.profilemenu .links .deconnecter {
+    color: #000000;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    justify-content: left;
+    border: none;
+    line-height: 20px;
+    text-decoration: none;
+}
+.marche-dossier {
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.num-dossier {
+    margin-right: 15px;
+    padding-left: 5px;
+    
+}
+.num-dossier a {
+    text-decoration: none;
+    color: #023047;
+}

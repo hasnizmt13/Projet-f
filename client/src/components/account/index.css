@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+.acc-container {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.acc-container .header {
+  width: auto;
+  height: 20%;
+  width: 100%;
+}
+
+.acc-container .mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.acc-container .mid .menu {
+  background-color: #60d19d;
+  height: 100%;
+  width: 20%;
+}
+
+.acc-container .mid .form-container {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fcfcfe;
+  margin-bottom: 100px;
+}
+
+.acc-container .mid .form-container .top-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.acc-container .mid .form-container .top-form .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.acc-container .mid .form-container .top-form .btns .btn {
+  margin-right: 35px;
+}
+
+.acc-container .mid .form-container .top-form .btns .btn .btn-arreter {
+  padding: 7px 5px;
+  width: 150px;
+  font-family: 'Manrope', sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  background-color: #fcfcfe;
+  font-weight: bold;
+  outline: none;
+}
+
+.acc-container .mid .form-container .top-form .btns .btn .btn-send {
+  outline: none;
+  padding: 7px 5px;
+  width: 150px;
+  font-family: 'Manrope', sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #4a1c96;
+  font-weight: 900;
+}
+
+.acc-container .mid .form-container .top-form .btns .btn .btn-sauv {
+  padding: 7px 5px;
+  width: 150px;
+  font-family: 'Manrope', sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  outline: none;
+  background-color: #4a1c96;
+}
+
+.acc-container .mid .form-container .top-form .btns .btn button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.acc-container .mid .form-container .top-form .btns .btn button:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.acc-container .mid .form-container .top-form .btns .btn button:hover {
+  cursor: pointer;
+}
+
+.acc-container .mid .form-container .top-form .btns .btn button.ghost {
+  background-color: transparent;
+}
+
+.acc-container .mid .form-container .top-form .btns .btn .lien {
+  color: black;
+  text-decoration: none;
+}
+
+.acc-container .mid .form-container .text-sauv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.acc-container .mid .form-container .text-sauv span {
+  color: black;
+}
+
+.acc-container .mid .form-container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.acc-container .mid .form-container .form .navigate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.acc-container .mid .form-container .form .navigate .page-txt {
+  color: rgba(0, 0, 0, 0.788);
+}
+
+.acc-container .mid .form-container .form .navigate span {
+  height: 50%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.acc-container .mid .form-container .form .navigate span:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.acc-container .mid .form-container .form .navigate .previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.acc-container .mid .form-container .form .navigate .next {
+  background-color: #4a1c96;
+  color: white;
+}
+
+.acc-container .mid .form-container .form .navigate .round {
+  border-radius: 50%;
+}
+
+.acc-container .mid .form-container .form .cont {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-top: 1px solid #b3b3b3;
+}
+
+.acc-container .mid .form-container .form .cont .text {
+  width: 250px;
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.acc-container .mid .form-container .form .cont .text label {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.acc-container .mid .form-container .form .cont .text span {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.788);
+}
+
+.acc-container .mid .form-container .form .cont .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border-radius: 19px;
+  font-size: 1.5rem;
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.acc-container .mid .form-container .form .cont .content #retard {
+  border: 1px solid red;
+}
+
+.acc-container .mid .form-container .form .cont .content #retard input {
+  color: red;
+}
+
+.acc-container .mid .form-container .form .cont .content #avance {
+  border: 1px solid green;
+}
+
+.acc-container .mid .form-container .form .cont .content #avance input {
+  color: green;
+}
+
+.acc-container .mid .form-container .form .cont .content select, .acc-container .mid .form-container .form .cont .content input {
+  border: none;
+  outline: none;
+  font-family: 'Cairo', sans-serif;
+}
+
+.acc-container .mid .form-container .form .cont .content input {
+  border-bottom: 1px solid black;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+
+.acc-container .mid .form-container .form .cont .content input::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+.acc-container .mid .form-container .form .cont .content input:-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.acc-container .mid .form-container .form .cont .content input::-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.acc-container .mid .form-container .form .cont .content input::placeholder {
+  font-size: 1rem;
+}
+
+.acc-container .mid .form-container .form .cont .content select {
+  padding-left: 5px;
+  border: 1px solid black;
+}
+
+.acc-container .mid .form-container .form .cont .content select .none {
+  display: none;
+}
+
+.acc-container .mid .form-container .form .cont .content .err-txt {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.acc-container .mid .form-container .form .cont .content input[type="file"] {
+  display: none;
+}
+
+.acc-container .mid .form-container .form .cont .content .icn-cont {
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Cairo', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=index.css.map */

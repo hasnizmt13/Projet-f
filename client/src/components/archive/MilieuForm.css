@@ -1,0 +1,68 @@
+.MilieuForm-container {
+    min-height: 200vh;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.head-top {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-top .download {
+    border: 1px solid black;
+    padding: 5px 10px;
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+.head-top .download:hover {
+    color: white;
+    background-color: black;
+}
+.head h1 {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.head .text {
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.tab {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.tab .title {
+    color: #123d52;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.tab-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.ta {
+    width: 60%;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-width: 50px;
+}
+
+td {
+    text-align: center;
+}
