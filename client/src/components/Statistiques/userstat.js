@@ -50,7 +50,10 @@ import { Bar, PolarArea } from 'react-chartjs-2';
 //     service: 'Budget'
 // };
 // let tab = [user1, user2, user3, user4, user5, user6, user7, user8];
-const [tab, setTab] = useState([])
+
+
+const Userstat = () => {
+    const [tab, setTab] = useState([])
 const [t, setT] = useState(1)
   useEffect(() => {
     fetch("/infoUser/").then( res => {
@@ -120,9 +123,6 @@ const state2 = {
     ]
 
 }
-
-const Userstat = () => {
-
     return (
         <div className="partie-milieu">
             <div>
