@@ -1,59 +1,73 @@
 import "../services/commun/Style_sheet.css"
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { Bar, PolarArea } from 'react-chartjs-2';
-const user1 = {
-    nom: 'Khedir meriem',
-    email: 'email@gmail.com',
-    role: "editeur",
-    service: 'Administrateur'
-};
-const user2 = {
-    nom: 'Cylia messar',
-    email: 'email@gmail.com',
-    role: "editeur",
-    service: 'marché'
-};
-const user3 = {
-    nom: 'Morad Larbi',
-    email: 'email@gmail.com',
-    role: "editeur",
-    service: 'commande'
-};
-const user4 = {
-    nom: 'Hasni Zoumata',
-    email: 'email@gmail.com',
-    role: "consultateur",
-    service: 'comptabilité'
-};
-const user5 = {
-    nom: 'Hasni Zoumata',
-    email: 'email@gmail.com',
-    role: "editeur",
-    service: 'comptabilité'
-};
-const user6 = {
-    nom: 'Saad Dahmani',
-    email: 'email@gmail.com',
-    role: "consultateur",
-    service: 'marché'
-};
-const user7 = {
-    nom: 'Koudil Mouloud',
-    email: 'email@gmail.com',
-    role: "editeur",
-    service: 'Ordonnateur'
-};
-const user8 = {
-    nom: 'Koudil Mouloud',
-    email: 'email@gmail.com',
-    role: "editeur",
-    service: 'Budget'
-};
-let tab = [user1, user2, user3, user4, user5, user6, user7, user8];
+// const user1 = {
+//     nom: 'Khedir meriem',
+//     email: 'email@gmail.com',
+//     role: "editeur",
+//     service: 'Administrateur'
+// };
+// const user2 = {
+//     nom: 'Cylia messar',
+//     email: 'email@gmail.com',
+//     role: "editeur",
+//     service: 'marché'
+// };
+// const user3 = {
+//     nom: 'Morad Larbi',
+//     email: 'email@gmail.com',
+//     role: "editeur",
+//     service: 'commande'
+// };
+// const user4 = {
+//     nom: 'Hasni Zoumata',
+//     email: 'email@gmail.com',
+//     role: "consultateur",
+//     service: 'comptabilité'
+// };
+// const user5 = {
+//     nom: 'Hasni Zoumata',
+//     email: 'email@gmail.com',
+//     role: "editeur",
+//     service: 'comptabilité'
+// };
+// const user6 = {
+//     nom: 'Saad Dahmani',
+//     email: 'email@gmail.com',
+//     role: "consultateur",
+//     service: 'marché'
+// };
+// const user7 = {
+//     nom: 'Koudil Mouloud',
+//     email: 'email@gmail.com',
+//     role: "editeur",
+//     service: 'Ordonnateur'
+// };
+// const user8 = {
+//     nom: 'Koudil Mouloud',
+//     email: 'email@gmail.com',
+//     role: "editeur",
+//     service: 'Budget'
+// };
+// let tab = [user1, user2, user3, user4, user5, user6, user7, user8];
+const [tab, setTab] = useState([])
+const [t, setT] = useState(1)
+  useEffect(() => {
+    fetch("/infoUser/").then( res => {
+        if (res.ok) {
+            return res.json()
+        }
+    }).then(jsonRes => {
+        if (jsonRes !== undefined){
+            setTab(jsonRes.infoUser.user)
+            setT(0)
+        }   
+    })
+},[t])
 function nombreserv(y) {
     let x = 0;
     tab.map((n) => {
-        if (y == n.service) {
+        if (y == n[3]) {
             x++;
         }
     })
@@ -63,7 +77,7 @@ function nombreserv(y) {
 function nombrerole(y) {
     let x = 0;
     tab.map((n) => {
-        if (y.toLocaleLowerCase() == n.role.toLocaleLowerCase()) {
+        if (y.toLocaleLowerCase() == n[2].toLocaleLowerCase()) {
             x++;
         }
     })
@@ -83,7 +97,7 @@ const state = {
                 '#A3CAE5',
                 '#1F234E',
             ],
-            data: [nombreserv('marché'), nombreserv('commande'), nombreserv('budget'), nombreserv('comptabilité'), nombreserv('Administrateur'), nombreserv('Ordonnateur')]
+            data: [nombreserv('marche'), nombreserv('commande'), nombreserv('budget'), nombreserv('comptable'), nombreserv('admin'), nombreserv('ordonnateur')]
 
         }
     ]
@@ -100,7 +114,7 @@ const state2 = {
             ],
             borderColor: '#1F234E',
             borderWidth: 0.5,
-            data: [nombrerole('consultateur'), nombrerole('editeur')]
+            data: [nombrerole('consulter'), nombrerole('modifier')]
 
         }
     ]

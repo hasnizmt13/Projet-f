@@ -43,7 +43,7 @@ router.post('/send', async(req,res) => {
     })
     var message = {
         from : process.env.MAIL_FROM,
-        to : "hasnizoumata@gmail.com", 
+        to : "esi313131@gmail.com", 
         subject : objet,
         html : `<p>Salut, <br><br>Un dossier est pret pour étre traiter.</p>
         Merci de le consulter<br>.

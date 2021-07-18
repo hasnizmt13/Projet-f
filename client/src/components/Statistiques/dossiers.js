@@ -1,58 +1,27 @@
 import "../services/commun/Style_sheet.css"
-import React from 'react';
+import {useState, useEffect } from 'react';
 import { Doughnut } from 'react-chartjs-2';
-const dossier1 = {
-    num: '1',
-    service: 'marché',
-    datecreation: '15/06/2021',
-    datelimite: '30/06/2021',
-    avancement: '25',
-};
+const [t, setT] = useState(1)
+const [NumMARCH, setNumMARCH] = useState([])
+const [NumCommande, setNumCommande] = useState([])
+const [Numbudget, setNumbudget] = useState([])
+const [Numcomptabilité, setNumcomptabilité] = useState([])
+  useEffect(() => {
+    fetch("/infor/").then( res => {
+        if (res.ok) {
+            return res.json()
+        }
+    }).then(jsonRes => {
+        if (jsonRes !== undefined){
+            setNumMARCH(jsonRes.infor.marcheDoss)
+            setNumCommande(jsonRes.infor.commandeDoss)
+            setNumbudget(jsonRes.infor.budgetDoss)
+            setNumcomptabilité(jsonRes.infor.comptableDoss)
+            setT(0)
+        }   
+    })
+},[t])
 
-const dossier2 = {
-    num: '2',
-    service: 'Commande',
-    datecreation: '15/06/2021',
-    datelimite: '30/06/2021',
-    avancement: '30',
-    path: "/commande-form/"
-};
-const dossier3 = {
-    num: '3',
-    service: 'Comptabilité',
-    datecreation: '15/06/2021',
-    datelimite: '30/06/2021',
-    avancement: '30',
-    path: "/commande-form/"
-};
-const dossier4 = {
-    num: '4',
-    service: 'Commande',
-    datecreation: '15/06/2021',
-    datelimite: '30/06/2021',
-    avancement: '45',
-    path: "/commande-form/"
-};
-const dossier5 = {
-    num: '5',
-    service: 'budget',
-    datecreation: '15/06/2021',
-    datelimite: '30/06/2021',
-    avancement: '64',
-    path: "/commande-form/"
-};
-const dossier6 = {
-    num: '6',
-    service: 'comptabilité',
-    datecreation: '15/06/2021',
-    datelimite: '30/06/2021',
-    avancement: '30',
-    path: "/commande-form/"
-};
-const NumMARCH = [ dossier6, dossier1];
-const NumCommande = [dossier1, dossier2, dossier3];
-const Numbudget = [dossier1];
-const Numcomptabilité = [ dossier6, dossier1];
 const state = {
     labels: ['Marché', 'commande', 'comptabilité',
         'budget'],

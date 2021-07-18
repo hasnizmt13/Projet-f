@@ -6,8 +6,7 @@ import '../services/commun/Style_sheet.css'
 import { useState } from "react"
 //import { useState, useEffect } from 'react'
 const Statistique = () => {
-    /*const [userInfo, setUserInfo] = useState({id: '', nom: '', prenom: '',email: '',psswrd: '',service: '',role: '',CT: ''})
-    const [userIn, setUserIn] = useState({id: '', nom: '', prenom: '',email: '',psswrd: '',service: '',role: '',CT: ''})
+    const [userInfo, setUserInfo] = useState({id: '', nom: '', prenom: '',email: '',psswrd: '',service: '',role: '',CT: ''})
     useEffect(() => {
         fetch("/users/").then( res => {
             if (res.ok) {
@@ -31,13 +30,13 @@ const Statistique = () => {
         })
         
         
-    })*/
-    const userInfo = {
-        nom: 'khedir Meriem',
-        email: 'email@gmail.com',
-        service: 'Marché',
-        role: "editeur"
-    };
+    })
+    // const userInfo = {
+    //     nom: 'khedir Meriem',
+    //     email: 'email@gmail.com',
+    //     service: 'Marché',
+    //     role: "editeur"
+    // };
     const serviceinfo = '/' + userInfo.service;
     const [num, setNum] = useState([])
     return (
